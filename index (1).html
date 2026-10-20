@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="แหล่งเรียนรู้ศิลปะและวัฒนธรรมไทย ตั้งแต่ศิลปกรรม สถาปัตยกรรม นาฏศิลป์ ดนตรี ประเพณี อาหาร และภูมิปัญญาไทย">
+<title>ศิลปะและวัฒนธรรมไทย | เรียนรู้คุณค่าแห่งความเป็นไทย</title>
+<style>
+:root{--wine:#641d2b;--wine2:#842f3b;--gold:#c99a3b;--cream:#fff9ed;--paper:#fffdf7;--ink:#30251f;--muted:#76685c;--line:#eadcc4;--shadow:0 12px 32px #4a24100d;--base:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,"Noto Sans Thai",sans-serif;font-size:var(--base);line-height:1.75}body.night{--cream:#191716;--paper:#24201e;--ink:#f8eee0;--muted:#c6b6a4;--line:#4c3c31;--shadow:0 12px 32px #0003}
+a{color:inherit}button,input{font:inherit}button{cursor:pointer}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:white;padding:.6rem;z-index:1000}
+header{background:linear-gradient(120deg,#4b1422,#7b2633 65%,#9b6033);color:#fff;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;background-image:radial-gradient(circle at 10px 10px,transparent 7px,#f4d58b 8px,transparent 9px);background-size:32px 32px}
+.topline{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.65rem max(1rem,calc((100% - 1180px)/2));background:#3c101b80;font-size:.9rem}
+.brand{font-weight:bold;letter-spacing:.02em}.tools{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}.tool-btn,.nav-toggle{border:1px solid #e7c887;background:#fff8e8;color:#5b1a27;border-radius:999px;padding:.4rem .75rem;font-size:.88rem}.tool-btn:hover,.tool-btn:focus{background:#f2d9a4}
+.hero{position:relative;z-index:1;max-width:1180px;margin:auto;padding:4.5rem 1.25rem 4rem;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.eyebrow{color:#f1d49a;letter-spacing:.12em;font-size:.9rem}.hero h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.25;margin:.35rem 0 1rem}.hero p{font-size:1.12rem;max-width:640px;color:#fff0db}.hero-img{width:100%;height:350px;object-fit:cover;border-radius:48% 48% 12px 12px;border:4px solid #e8c47c;box-shadow:0 18px 44px #22071070}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;border:0;border-radius:999px;padding:.75rem 1.15rem;background:var(--gold);color:#321923;text-decoration:none;font-weight:bold;box-shadow:var(--shadow)}.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}.btn.secondary{background:transparent;color:inherit;border:1px solid var(--gold);box-shadow:none}
+nav{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 4px 14px #00000009}
+.nav-inner{max-width:1180px;margin:auto;display:flex;align-items:center;gap:.35rem;padding:.5rem 1rem;overflow-x:auto}.nav-inner a{white-space:nowrap;text-decoration:none;padding:.55rem .72rem;border-radius:999px;color:var(--muted);font-size:.91rem}.nav-inner a:hover,.nav-inner a:focus{background:#f3e3c4;color:var(--wine)}
+main{max-width:1180px;margin:auto;padding:1rem 1.25rem 4rem}.section{padding:3.3rem 0 1rem}.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.3rem}.section-head h2{margin:0;color:var(--wine);font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.35}.night .section-head h2{color:#f0c878}.section-head p{margin:.4rem 0 0;color:var(--muted)}.ornament{color:var(--gold);font-size:1.5rem;letter-spacing:.25em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}.card img{width:100%;height:205px;object-fit:cover;background:#eadcc4;cursor:zoom-in}.card-body{padding:1rem 1.1rem;display:flex;flex-direction:column;align-items:flex-start;flex:1}.tag{display:inline-block;color:var(--wine2);background:#f5e8cb;border-radius:999px;padding:.12rem .65rem;font-size:.78rem;margin-bottom:.4rem}.night .tag{color:#f8dba0;background:#49372a}.card h3{margin:.1rem 0 .35rem;font-size:1.18rem;line-height:1.5}.card p{margin:.2rem 0 .8rem;color:var(--muted);font-size:.94rem}.card .btn{margin-top:auto;font-size:.9rem;padding:.55rem .9rem}.search-row{display:flex;gap:.6rem;max-width:680px;margin:1rem 0 1.4rem}.search-row input{flex:1;min-width:0;padding:.75rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}.search-row button{border-radius:12px}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}.filter{border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);padding:.45rem .9rem}.filter.active,.filter:hover{background:var(--wine);border-color:var(--wine);color:white}
+.feature{display:grid;grid-template-columns:.85fr 1.15fr;gap:1.5rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.2rem;box-shadow:var(--shadow)}.feature img{width:100%;height:310px;object-fit:cover;border-radius:14px}.feature h3{font-size:1.5rem;color:var(--wine);margin:.2rem 0}.night .feature h3{color:#f0c878}.feature p{color:var(--muted)}
+.quiz-box{background:var(--paper);border:1px solid var(--line);padding:1.4rem;border-radius:18px;box-shadow:var(--shadow)}.quiz-box h3{margin-top:0}.question{padding:1rem 0;border-bottom:1px solid var(--line)}.question:last-child{border-bottom:0}.question legend{font-weight:bold;padding:0 0 .5rem}.question label{display:block;padding:.28rem .5rem;border-radius:8px;cursor:pointer}.question label:hover{background:#f4e8d1}.question input{margin-right:.5rem;accent-color:var(--wine)}#quiz-result{font-weight:bold;margin-top:1rem}
+.about{background:linear-gradient(120deg,#4b1422,#7b2633);color:#fff2dd;padding:2rem;border-radius:20px}.about h2{color:#f2cf82}.about a{color:#f2cf82}.about small{color:#f5ddbc}
+footer{background:#32121b;color:#f7e9d0;padding:2rem 1rem;text-align:center}footer p{margin:.3rem auto;max-width:850px}footer a{color:#f2cf82}
+#backtop{position:fixed;right:1rem;bottom:1rem;z-index:60;display:none;border:0;background:var(--wine);color:white;border-radius:50%;width:48px;height:48px;font-size:1.3rem;box-shadow:0 6px 20px #0003}#backtop.show{display:block}
+dialog{width:min(900px,92vw);max-height:90vh;padding:1rem;border:1px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink);box-shadow:0 25px 100px #0008}dialog::backdrop{background:#1b0d10bb}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:1rem}.modal-head h3{margin:.3rem 0}.close{border:0;border-radius:50%;width:40px;height:40px;background:var(--wine);color:white;font-size:1.2rem}.modal-img{display:block;max-width:100%;max-height:65vh;object-fit:contain;margin:.5rem auto;border-radius:10px}.modal-text{color:var(--muted)}.hidden{display:none!important}.empty{padding:1.5rem;border:1px dashed var(--line);border-radius:12px;color:var(--muted);text-align:center}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:3rem}.hero-img{height:280px;max-width:600px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature{grid-template-columns:1fr}.feature img{height:260px}.topline{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.card img{height:230px}.hero{padding:2.5rem 1rem}.hero-img{height:230px}.section{padding-top:2.3rem}.section-head{align-items:flex-start;flex-direction:column}.tools{gap:.35rem}.tool-btn{font-size:.8rem}.search-row{flex-wrap:wrap}.search-row input{flex-basis:100%}main{padding-left:1rem;padding-right:1rem}}
+@media print{nav,.tools,.search-row,.filters,.btn,#backtop,footer{display:none!important}body{background:white;color:black}.card,.feature{break-inside:avoid;box-shadow:none}.section{padding:1rem 0}.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+<header id="home">
+  <div class="topline">
+    <div class="brand">✦ แหล่งเรียนรู้มรดกไทย</div>
+    <div class="tools" aria-label="เครื่องมือเว็บไซต์">
+      <button class="tool-btn" id="fontDown" type="button" title="ลดขนาดตัวอักษร">ก−</button>
+      <button class="tool-btn" id="fontUp" type="button" title="เพิ่มขนาดตัวอักษร">ก+</button>
+      <button class="tool-btn" id="themeToggle" type="button" aria-pressed="false">☾ โหมดกลางคืน</button>
+      <button class="tool-btn" id="shareBtn" type="button">↗ แชร์เว็บไซต์</button>
+      <button class="tool-btn" id="printBtn" type="button">⎙ พิมพ์</button>
+    </div>
+  </div>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">THAI ARTS & CULTURE</div>
+      <h1>ศิลปะและ<br>วัฒนธรรมไทย</h1>
+      <p>เรียนรู้คุณค่า ภูมิปัญญา และเอกลักษณ์แห่งความเป็นไทย ผ่านงานศิลป์ สถาปัตยกรรม การแสดง ประเพณี และวิถีชีวิตที่สืบทอดจากรุ่นสู่รุ่น</p>
+      <a class="btn" href="#art">เริ่มเรียนรู้ <span aria-hidden="true">↓</span></a>
+      <a class="btn secondary" href="#quiz">ทดสอบความรู้</a>
+    </div>
+    <img class="hero-img zoomable" src="https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?auto=format&fit=crop&w=1100&q=85" alt="สถาปัตยกรรมวัดไทยสีทองและหลังคาประดับลวดลาย" data-caption="สถาปัตยกรรมไทยสะท้อนความประณีตและความเชื่อทางวัฒนธรรม">
+  </div>
+</header>
+
+<nav aria-label="เมนูหลัก"><div class="nav-inner">
+  <a href="#home">หน้าแรก</a><a href="#art">ศิลปะไทย</a><a href="#architecture">สถาปัตยกรรม</a><a href="#performing">นาฏศิลป์</a><a href="#music">ดนตรีไทย</a><a href="#traditions">ประเพณีไทย</a><a href="#food">อาหารไทย</a><a href="#wisdom">ภูมิปัญญา</a><a href="#gallery">แกลเลอรี</a><a href="#quiz">แบบทดสอบ</a><a href="#about">เกี่ยวกับ</a>
+</div></nav>
+
+<main id="main">
+  <section class="section" id="explore">
+    <div class="section-head"><div><div class="ornament">❧ ❀ ❧</div><h2>ค้นพบความเป็นไทย</h2><p>ค้นหาคำสำคัญเพื่อค้นหาเนื้อหาในเว็บไซต์</p></div></div>
+    <form class="search-row" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="ลองค้นหา เช่น โขน ผ้าไหม วัดอรุณ..." aria-label="ค้นหาเนื้อหา">
+      <button class="btn" type="submit">⌕ ค้นหา</button>
+      <button class="btn secondary" type="button" id="clearSearch">ล้างคำค้น</button>
+    </form>
+    <p id="searchStatus" aria-live="polite" class="modal-text"></p>
+  </section>
+
+  <section class="section" id="art">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๑. ศิลปะไทย</h2><p>งานสร้างสรรค์ที่สะท้อนความเชื่อ ความงาม และฝีมือช่างไทย</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="จิตรกรรมไทย ภาพฝาผนัง พุทธประวัติ ภาพเขียน">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80" alt="ภาพจิตรกรรมสีสันและลวดลายละเอียด" data-caption="จิตรกรรมไทย: งานเขียนภาพที่ถ่ายทอดเรื่องราว ความเชื่อ และวิถีชีวิต">
+        <div class="card-body"><span class="tag">จิตรกรรม</span><h3>จิตรกรรมไทย</h3><p>ศิลปะการเขียนภาพ เช่น จิตรกรรมฝาผนังในวัด ซึ่งมักถ่ายทอดพุทธประวัติ วรรณคดี และเรื่องราวในสังคมแต่ละยุคสมัย</p><button class="btn detail-btn" data-title="จิตรกรรมไทย" data-detail="จิตรกรรมไทยมีรูปแบบและเทคนิคหลากหลายตามยุคและท้องถิ่น ภาพจิตรกรรมฝาผนังในศาสนสถานมักใช้เล่าเรื่องทางศาสนา วรรณคดี ประวัติศาสตร์ และวิถีชีวิต ควรศึกษาควบคู่กับบริบทของสถานที่และช่วงเวลาที่สร้าง">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ประติมากรรม พระพุทธรูป งานแกะสลัก ปั้น หล่อ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1606293926075-69a00dbdda81?auto=format&fit=crop&w=900&q=80" alt="ประติมากรรมพระพุทธรูปในศาสนสถาน" data-caption="ประติมากรรมไทยมีทั้งงานปั้น งานหล่อ และงานแกะสลัก">
+        <div class="card-body"><span class="tag">ประติมากรรม</span><h3>ประติมากรรมไทย</h3><p>งานสามมิติ เช่น พระพุทธรูป รูปปั้น และงานแกะสลัก สะท้อนทักษะของช่างและคติความเชื่อในสังคมไทย</p><button class="btn detail-btn" data-title="ประติมากรรมไทย" data-detail="ประติมากรรมคือศิลปะที่สร้างรูปทรงสามมิติด้วยวิธีปั้น แกะสลัก หล่อ หรือประกอบวัสดุ ผลงานไทยมีทั้งงานศาสนาและงานประดับตกแต่ง โดยรูปแบบแตกต่างกันไปตามสมัยและภูมิภาค">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="หัตถศิลป์ เบญจรงค์ จักสาน เครื่องถม งานฝีมือ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80" alt="งานหัตถกรรมและเครื่องปั้นดินเผาทำด้วยมือ" data-caption="หัตถศิลป์ไทยแสดงความประณีตและภูมิปัญญาของช่าง">
+        <div class="card-body"><span class="tag">หัตถศิลป์</span><h3>หัตถศิลป์ไทย</h3><p>งานฝีมือ เช่น เครื่องเบญจรงค์ งานจักสาน และเครื่องถม เกิดจากความรู้ที่สืบทอดและปรับใช้วัสดุในท้องถิ่น</p><button class="btn detail-btn" data-title="หัตถศิลป์ไทย" data-detail="หัตถศิลป์เป็นงานสร้างสรรค์ที่ผสานประโยชน์ใช้สอยกับความงาม ตัวอย่างได้แก่ เครื่องเบญจรงค์ เครื่องถม เครื่องจักสาน และงานแกะสลัก แต่ละชนิดมีวัสดุ เทคนิค และแหล่งผลิตที่เป็นเอกลักษณ์">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="architecture">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๒. สถาปัตยกรรมไทย</h2><p>รูปแบบอาคารที่เชื่อมโยงศาสนา ประวัติศาสตร์ ภูมิอากาศ และวิถีชีวิต</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="วัดพระแก้ว พระศรีรัตนศาสดาราม พระบรมมหาราชวัง กรุงเทพ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=900&q=80" alt="อาคารวัดไทยที่มีหลังคาและยอดประดับตกแต่ง" data-caption="วัดพระศรีรัตนศาสดาราม หรือวัดพระแก้ว ตั้งอยู่ในเขตพระบรมมหาราชวัง">
+        <div class="card-body"><span class="tag">กรุงเทพมหานคร</span><h3>วัดพระแก้ว</h3><p>วัดพระศรีรัตนศาสดารามเป็นศาสนสถานสำคัญในพระบรมมหาราชวัง มีคุณค่าทางศาสนา ศิลปกรรม และประวัติศาสตร์</p><button class="btn detail-btn" data-title="วัดพระแก้ว" data-detail="วัดพระศรีรัตนศาสดารามสร้างขึ้นในสมัยรัชกาลที่ ๑ ภายในประดิษฐานพระแก้วมรกต สถาปัตยกรรมและจิตรกรรมในบริเวณวัดสะท้อนศิลปกรรมราชสำนักไทย ควรตรวจสอบข้อกำหนดการเข้าชมจากแหล่งทางการก่อนเดินทาง">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="วัดอรุณราชวราราม พระปรางค์ ริมแม่น้ำเจ้าพระยา">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="พระปรางค์และสถาปัตยกรรมไทยริมแม่น้ำ" data-caption="พระปรางค์วัดอรุณเป็นหนึ่งในสัญลักษณ์สำคัญของกรุงเทพมหานคร">
+        <div class="card-body"><span class="tag">ริมแม่น้ำเจ้าพระยา</span><h3>วัดอรุณราชวราราม</h3><p>โดดเด่นด้วยพระปรางค์ประดับกระเบื้องและเครื่องถ้วย เป็นตัวอย่างงานช่างที่สะท้อนความประณีตของสถาปัตยกรรมไทย</p><button class="btn detail-btn" data-title="วัดอรุณราชวราราม" data-detail="วัดอรุณราชวรารามตั้งอยู่ริมแม่น้ำเจ้าพระยา ฝั่งธนบุรี พระปรางค์ประธานเป็นจุดเด่นที่ประดับด้วยชิ้นกระเบื้องและเครื่องถ้วยหลากสี เป็นแหล่งเรียนรู้ด้านสถาปัตยกรรมและงานประดับตกแต่ง">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="พระที่นั่งจักรีมหาปราสาท พระบรมมหาราชวัง สถาปัตยกรรม">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=80" alt="อาคารสถาปัตยกรรมไทยในเขตพระราชวัง" data-caption="พระที่นั่งจักรีมหาปราสาทเป็นสถาปัตยกรรมที่ผสมผสานรูปแบบตะวันตกกับหลังคาไทย">
+        <div class="card-body"><span class="tag">สถาปัตยกรรมราชสำนัก</span><h3>พระที่นั่งจักรีมหาปราสาท</h3><p>เป็นอาคารสำคัญในพระบรมมหาราชวัง ซึ่งมีลักษณะผสมผสานสถาปัตยกรรมตะวันตกกับหลังคาแบบไทย</p><button class="btn detail-btn" data-title="พระที่นั่งจักรีมหาปราสาท" data-detail="พระที่นั่งจักรีมหาปราสาทสร้างในสมัยรัชกาลที่ ๕ รูปแบบอาคารผสมผสานแนวทางสถาปัตยกรรมตะวันตกกับองค์ประกอบหลังคาไทย จึงเป็นตัวอย่างการประยุกต์รูปแบบศิลปะต่างวัฒนธรรม">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="เรือนไทยภาคกลาง ใต้ถุนสูง ไม้ หลังคา ภูมิอากาศ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80" alt="เรือนไม้และสถาปัตยกรรมพื้นถิ่นท่ามกลางธรรมชาติ" data-caption="เรือนไทยพื้นถิ่นปรับรูปแบบให้เหมาะกับภูมิอากาศและวิถีชีวิต">
+        <div class="card-body"><span class="tag">สถาปัตยกรรมพื้นถิ่น</span><h3>เรือนไทยภาคกลาง</h3><p>เรือนไทยแบบดั้งเดิมมักใช้ไม้ ยกพื้นสูง และมีช่องระบายอากาศ เพื่อให้เหมาะกับสภาพอากาศและวิถีชีวิตในพื้นที่</p><button class="btn detail-btn" data-title="เรือนไทยภาคกลาง" data-detail="เรือนไทยภาคกลางมีรูปแบบแตกต่างตามฐานะ การใช้งาน และท้องถิ่น ลักษณะที่พบได้ในเรือนไทยหลายแบบ ได้แก่ การใช้ไม้ การยกพื้น และการจัดพื้นที่ให้เหมาะกับอากาศร้อนชื้นและฤดูกาลน้ำ">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="performing">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๓. นาฏศิลป์และการแสดงไทย</h2><p>ศิลปะการเคลื่อนไหว ดนตรี บทพากย์ และเครื่องแต่งกายที่สื่อเรื่องราว</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="โขน หน้ากาก ยักษ์ ลิง รามเกียรติ์ นาฏศิลป์">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80" alt="งานศิลป์ไทยสีสันสดใสที่ใช้ประกอบการเรียนรู้ศิลปะการแสดง" data-caption="โขนเป็นศิลปะการแสดงชั้นสูงของไทยที่ใช้ท่ารำ ดนตรี และการพากย์">
+        <div class="card-body"><span class="tag">การแสดง</span><h3>โขน</h3><p>การแสดงที่ผสมผสานท่ารำ ดนตรี วงปี่พาทย์ การพากย์และเจรจา มักนำเรื่องรามเกียรติ์มาแสดง และมีเครื่องแต่งกายเฉพาะ</p><button class="btn detail-btn" data-title="โขน" data-detail="โขนเป็นศิลปะการแสดงที่มีองค์ประกอบหลายด้าน ได้แก่ ท่ารำ ดนตรี การพากย์และเจรจา รวมถึงเครื่องแต่งกายและหัวโขน ตัวละครและรูปแบบการแสดงอาจแตกต่างกันตามชุดการแสดงและคณะผู้แสดง">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ละครไทย ละครใน ละครนอก ท่ารำ เรื่องราว">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=80" alt="นักแสดงสวมเครื่องแต่งกายประณีตในงานวัฒนธรรม" data-caption="ละครไทยมีรูปแบบการแสดงและธรรมเนียมแตกต่างกันตามประเภท">
+        <div class="card-body"><span class="tag">นาฏศิลป์</span><h3>ละครไทย</h3><p>เป็นการแสดงที่ใช้ท่ารำ ดนตรี บทร้อง และเรื่องราว มีหลายประเภท เช่น ละครในและละครนอก ซึ่งมีลักษณะต่างกัน</p><button class="btn detail-btn" data-title="ละครไทย" data-detail="ละครไทยมีพัฒนาการหลายยุค มีทั้งรูปแบบราชสำนักและการแสดงพื้นบ้าน องค์ประกอบสำคัญอาจรวมถึงการขับร้อง ดนตรี ท่ารำ บทเจรจา และเครื่องแต่งกายตามบทบาท">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="รำไทย ฟ้อน รำเดี่ยว รำหมู่ ท่ารำ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1604608672516-6c8a75c6c4e9?auto=format&fit=crop&w=900&q=80" alt="การแสดงนาฏศิลป์และท่ารำในเครื่องแต่งกายไทย" data-caption="รำไทยเน้นความสัมพันธ์ระหว่างท่าทาง จังหวะ และดนตรี">
+        <div class="card-body"><span class="tag">การร่ายรำ</span><h3>รำไทย</h3><p>การเคลื่อนไหวอย่างมีแบบแผน ใช้ท่ามือ แขน ลำตัว และการก้าวเท้าสัมพันธ์กับจังหวะดนตรี มีทั้งรำเดี่ยวและรำหมู่</p><button class="btn detail-btn" data-title="รำไทย" data-detail="รำไทยฝึกความอ่อนช้อย ความแม่นยำของจังหวะ และการสื่อความหมายผ่านท่าทาง รูปแบบการรำมีทั้งที่ใช้ในพิธีการ การแสดงบนเวที และการแสดงพื้นบ้านในแต่ละภูมิภาค">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="หุ่นละครเล็ก หุ่นไทย เชิดหุ่น โรงละคร">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80" alt="งานหัตถกรรมและศิลปะหุ่นสำหรับการแสดง" data-caption="หุ่นละครเล็กเป็นศิลปะการเชิดหุ่นที่ต้องอาศัยความพร้อมเพรียงของผู้เชิด">
+        <div class="card-body"><span class="tag">ศิลปะหุ่น</span><h3>หุ่นละครเล็ก</h3><p>การแสดงหุ่นที่ผู้เชิดควบคุมการเคลื่อนไหวให้สัมพันธ์กับดนตรีและเรื่องราว ต้องอาศัยการฝึกฝนและทำงานเป็นทีม</p><button class="btn detail-btn" data-title="หุ่นละครเล็ก" data-detail="หุ่นละครเล็กเป็นการแสดงที่ผสมผสานงานประดิษฐ์หุ่น ดนตรี ท่าทาง และการประสานงานของผู้เชิด การแสดงแต่ละคณะอาจมีรูปแบบและเทคนิคเฉพาะของตน">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="music">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๔. ดนตรีไทย</h2><p>เสียงดนตรีจากเครื่องตี เครื่องดีด เครื่องสี และเครื่องเป่า</p></div></div>
+    <div class="feature searchable" data-search="ดนตรีไทย ระนาดเอก จะเข้ ขิม ซอด้วง ขลุ่ย">
+      <img class="zoomable" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85" alt="เครื่องดนตรีและการบรรเลงในกิจกรรมทางวัฒนธรรม" data-caption="ดนตรีไทยมีเครื่องดนตรีหลายประเภทและใช้บรรเลงในโอกาสต่าง ๆ">
+      <div><span class="tag">มรดกทางเสียง</span><h3>รู้จักเครื่องดนตรีไทย</h3><p><strong>ระนาดเอก</strong> — เครื่องตีที่มีลูกระนาดเรียงตามระดับเสียง ใช้ไม้ตีให้เกิดทำนอง</p><p><strong>จะเข้</strong> — เครื่องดีดวางราบกับพื้น มีสายสำหรับดีดสร้างทำนอง</p><p><strong>ขิม</strong> — เครื่องสายตี ใช้ไม้ตีสายให้เกิดเสียงกังวาน</p><p><strong>ซอด้วง</strong> — เครื่องสายสี มีคันชักใช้สีให้เกิดเสียง</p><p><strong>ขลุ่ยไทย</strong> — เครื่องเป่าที่ใช้ลมและการปิดเปิดรูนิ้วเพื่อเปลี่ยนระดับเสียง</p><button class="btn detail-btn" data-title="ดนตรีไทย" data-detail="เครื่องดนตรีไทยแบ่งอย่างกว้าง ๆ ได้เป็นเครื่องตี เครื่องดีด เครื่องสี และเครื่องเป่า มักบรรเลงรวมเป็นวงตามโอกาสและรูปแบบ เช่น วงปี่พาทย์ วงเครื่องสาย และวงมโหรี">ดูรายละเอียด</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="traditions">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๕. ประเพณีไทย</h2><p>กิจกรรมที่เชื่อมโยงชุมชน ความเชื่อ ศาสนา และฤดูกาล</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="สงกรานต์ ปีใหม่ไทย รดน้ำดำหัว ครอบครัว เมษายน">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=80" alt="บรรยากาศเทศกาลและผู้คนร่วมกิจกรรมกลางแจ้ง" data-caption="สงกรานต์เป็นเทศกาลปีใหม่ไทยที่มีทั้งกิจกรรมครอบครัวและชุมชน">
+        <div class="card-body"><span class="tag">ทั่วประเทศไทย</span><h3>ประเพณีสงกรานต์</h3><p>เทศกาลปีใหม่ไทยในเดือนเมษายน มีการทำบุญ รดน้ำขอพรผู้ใหญ่ และกิจกรรมชุมชน โดยแต่ละพื้นที่มีธรรมเนียมเฉพาะ</p><button class="btn detail-btn" data-title="ประเพณีสงกรานต์" data-detail="สงกรานต์มีความหมายเกี่ยวกับการเริ่มต้นปีใหม่ตามคติเดิม กิจกรรมที่พบ ได้แก่ ทำบุญ สรงน้ำพระ รดน้ำดำหัว และพบปะครอบครัว ควรเล่นน้ำอย่างสุภาพและเคารพความปลอดภัยของผู้อื่น">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ลอยกระทง กระทง แม่น้ำ วันเพ็ญ เดือนสิบสอง">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?auto=format&fit=crop&w=900&q=80" alt="แสงเทียนและบรรยากาศงานประเพณีในเวลากลางคืน" data-caption="ลอยกระทงมีรูปแบบกิจกรรมแตกต่างกันในแต่ละชุมชน">
+        <div class="card-body"><span class="tag">หลายภูมิภาค</span><h3>ประเพณีลอยกระทง</h3><p>จัดในช่วงวันเพ็ญเดือนสิบสองตามจารีตที่นิยมในหลายพื้นที่ ผู้คนร่วมกิจกรรมเกี่ยวกับสายน้ำและการขอขมาตามความเชื่อของชุมชน</p><button class="btn detail-btn" data-title="ประเพณีลอยกระทง" data-detail="ประเพณีลอยกระทงมีที่มาและความหมายหลากหลายตามคำอธิบายทางประวัติศาสตร์และความเชื่อในแต่ละท้องถิ่น ปัจจุบันควรเลือกวัสดุที่ย่อยสลายได้และร่วมกิจกรรมโดยไม่สร้างขยะหรืออันตรายต่อแหล่งน้ำ">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ยี่เป็ง ล้านนา เชียงใหม่ โคม ประเพณีภาคเหนือ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80" alt="โคมไฟประดับส่องแสงในเทศกาลยามค่ำคืน" data-caption="ยี่เป็งเป็นประเพณีที่เกี่ยวข้องกับวัฒนธรรมล้านนา">
+        <div class="card-body"><span class="tag">ภาคเหนือ</span><h3>ประเพณียี่เป็ง</h3><p>ประเพณีล้านนาที่จัดในช่วงเดือนยี่ตามปฏิทินล้านนา มีกิจกรรมประดับโคม ทำบุญ และงานชุมชนในหลายพื้นที่</p><button class="btn detail-btn" data-title="ประเพณียี่เป็ง" data-detail="ยี่เป็งเป็นประเพณีในวัฒนธรรมล้านนา โดยกิจกรรมอาจประกอบด้วยการทำบุญ การประดับโคม และกิจกรรมทางศาสนา การปล่อยโคมลอยมีข้อจำกัดด้านความปลอดภัยและกฎหมายในหลายพื้นที่ จึงควรตรวจสอบประกาศท้องถิ่น">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="บุญบั้งไฟ อีสาน ขอฝน พญาแถน พฤษภาคม">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=900&q=80" alt="งานเทศกาลท้องถิ่นที่มีแสงสีและผู้คนร่วมงาน" data-caption="บุญบั้งไฟเป็นประเพณีสำคัญของชุมชนในภาคตะวันออกเฉียงเหนือ">
+        <div class="card-body"><span class="tag">ภาคตะวันออกเฉียงเหนือ</span><h3>ประเพณีบุญบั้งไฟ</h3><p>ประเพณีชุมชนที่เกี่ยวข้องกับความเชื่อเรื่องฝนและการทำนา มีขบวนแห่ การแสดงพื้นบ้าน และกิจกรรมตามท้องถิ่น</p><button class="btn detail-btn" data-title="ประเพณีบุญบั้งไฟ" data-detail="บุญบั้งไฟพบในชุมชนภาคอีสานหลายแห่ง โดยเฉพาะพื้นที่ที่มีวัฒนธรรมเกี่ยวข้องกับการทำนา ประเพณีมีขบวนแห่และกิจกรรมชุมชน ควรปฏิบัติตามมาตรการความปลอดภัยอย่างเคร่งครัด">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="แห่เทียนพรรษา อุบลราชธานี เข้าพรรษา แกะสลักเทียน">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1606293926075-69a00dbdda81?auto=format&fit=crop&w=900&q=80" alt="งานประติมากรรมที่สะท้อนความประณีตของช่างฝีมือ" data-caption="งานแห่เทียนพรรษาเป็นกิจกรรมสำคัญก่อนเข้าพรรษาในหลายชุมชน">
+        <div class="card-body"><span class="tag">หลายพื้นที่ โดยเฉพาะอุบลราชธานี</span><h3>ประเพณีแห่เทียนพรรษา</h3><p>เกี่ยวข้องกับการถวายเทียนแก่พระสงฆ์ในช่วงเข้าพรรษา และพัฒนาสู่งานขบวนแห่เทียนแกะสลักในบางพื้นที่</p><button class="btn detail-btn" data-title="ประเพณีแห่เทียนพรรษา" data-detail="การถวายเทียนมีความสัมพันธ์กับการเตรียมแสงสว่างสำหรับพระสงฆ์ในช่วงเข้าพรรษา ในจังหวัดอุบลราชธานีมีชื่อเสียงด้านขบวนแห่เทียนขนาดใหญ่และงานแกะสลักเทียนอย่างประณีต">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="food">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๖. อาหารไทย</h2><p>รสชาติ วัตถุดิบ และภูมิปัญญาการปรุงอาหารจากหลายภูมิภาค</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="ต้มยำกุ้ง อาหารไทย เปรี้ยว เผ็ด ตะไคร้ ใบมะกรูด">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=900&q=80" alt="อาหารไทยประเภทต้มรสจัดในชาม" data-caption="ต้มยำกุ้งมีรสเปรี้ยว เผ็ด และกลิ่นหอมจากสมุนไพร">
+        <div class="card-body"><span class="tag">อาหารไทย</span><h3>ต้มยำกุ้ง</h3><p>อาหารประเภทน้ำที่มีรสเปรี้ยวและเผ็ด ใช้สมุนไพรอย่างตะไคร้ ข่า และใบมะกรูด โดยสูตรแตกต่างกันได้</p><button class="btn detail-btn" data-title="ต้มยำกุ้ง" data-detail="ต้มยำกุ้งมีส่วนประกอบหลักคือกุ้งและสมุนไพรไทย เช่น ตะไคร้ ข่า ใบมะกรูด และพริก บางสูตรใส่น้ำพริกเผาหรือนมเพื่อให้รสเข้มข้นขึ้น">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ผัดไทย เส้นจันท์ เต้าหู้ ถั่วงอก มะขาม">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=900&q=80" alt="ผัดเส้นแบบอาหารเอเชียพร้อมผักและเครื่องปรุง" data-caption="ผัดไทยเป็นอาหารจานเส้นที่ปรุงรสเปรี้ยวหวานเค็มและรับประทานกับเครื่องเคียง">
+        <div class="card-body"><span class="tag">อาหารจานเส้น</span><h3>ผัดไทย</h3><p>อาหารจานเส้นที่มักปรุงด้วยซอสมะขาม น้ำปลา และน้ำตาล เสิร์ฟพร้อมถั่วงอก กุยช่าย มะนาว และเครื่องเคียง</p><button class="btn detail-btn" data-title="ผัดไทย" data-detail="ผัดไทยมีสูตรหลากหลาย มักใช้เส้นข้าวเจ้า ผัดกับไข่ เต้าหู้หรือโปรตีนอื่น และปรุงรสด้วยส่วนผสมเปรี้ยว หวาน เค็ม เครื่องเคียงและวัตถุดิบอาจต่างกันตามร้านและท้องถิ่น">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="แกงเขียวหวาน กะทิ พริกแกง โหระพา">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80" alt="แกงไทยสีเขียวในชามพร้อมเครื่องเคียง" data-caption="แกงเขียวหวานมีพริกแกง กะทิ และสมุนไพรเป็นองค์ประกอบสำคัญ">
+        <div class="card-body"><span class="tag">แกงไทย</span><h3>แกงเขียวหวาน</h3><p>แกงกะทิที่ใช้พริกแกงเขียวหวาน มักใส่เนื้อสัตว์ มะเขือ และใบโหระพา มีรสเข้มข้นหอมสมุนไพร</p><button class="btn detail-btn" data-title="แกงเขียวหวาน" data-detail="แกงเขียวหวานใช้พริกแกงที่มีพริกสีเขียวและสมุนไพรเป็นส่วนประกอบ ผสมกับกะทิและวัตถุดิบตามสูตร เช่น ไก่ ลูกชิ้นปลา หรือเนื้อสัตว์อื่น รสชาติแตกต่างกันตามผู้ปรุง">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ส้มตำ อีสาน มะละกอ ปลาร้า มะนาว พริก">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=900&q=80" alt="ส้มตำมะละกอสับพร้อมผักและเครื่องเคียง" data-caption="ส้มตำมีหลายสูตรตามวัตถุดิบและรสนิยมของแต่ละพื้นที่">
+        <div class="card-body"><span class="tag">นิยมแพร่หลายในภาคอีสาน</span><h3>ส้มตำ</h3><p>อาหารที่ใช้มะละกอดิบสับตำกับเครื่องปรุง มีหลายสูตร เช่น ตำไทยและตำปลาร้า รสชาติปรับได้ตามท้องถิ่น</p><button class="btn detail-btn" data-title="ส้มตำ" data-detail="ส้มตำมีความหลากหลายของสูตรและวัตถุดิบ เช่น มะละกอ มะเขือเทศ ถั่วฝักยาว พริก มะนาว น้ำปลา หรือปลาร้า มักรับประทานคู่กับข้าวเหนียวและอาหารอื่น">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="ข้าวซอย ภาคเหนือ เชียงใหม่ กะทิ เส้นกรอบ">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80" alt="ก๋วยเตี๋ยวน้ำแกงพร้อมเส้นและเครื่องเคียง" data-caption="ข้าวซอยเป็นอาหารเส้นที่มีชื่อเสียงในภาคเหนือของไทย">
+        <div class="card-body"><span class="tag">ภาคเหนือ</span><h3>ข้าวซอย</h3><p>อาหารเส้นในน้ำแกงกะทิและเครื่องเทศ มักเสิร์ฟพร้อมเส้นกรอบ หอมแดง ผักกาดดอง และมะนาว</p><button class="btn detail-btn" data-title="ข้าวซอย" data-detail="ข้าวซอยเป็นอาหารที่มีชื่อเสียงในภาคเหนือ โดยเฉพาะเชียงใหม่และพื้นที่ใกล้เคียง มีอิทธิพลทางวัฒนธรรมอาหารจากการติดต่อระหว่างกลุ่มผู้คนและภูมิภาค สูตรและเครื่องเคียงอาจแตกต่างกัน">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="wisdom">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๗. ภูมิปัญญาไทย</h2><p>ความรู้และทักษะที่เกิดจากประสบการณ์ ถ่ายทอดและพัฒนาตามบริบทชุมชน</p></div></div>
+    <div class="grid searchable">
+      <article class="card" data-search="ผ้าไหมไทย ทอผ้า เส้นไหม ลวดลาย ภูมิปัญญา">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=80" alt="ผ้าทอและสิ่งทอสีสันสดใส" data-caption="ผ้าไหมและผ้าทอไทยสะท้อนทักษะการย้อม การทอ และลวดลายท้องถิ่น">
+        <div class="card-body"><span class="tag">สิ่งทอ</span><h3>ผ้าไหมไทย</h3><p>ผ้าไหมไทยมีความหลากหลายของเส้นไหม เทคนิคการทอ และลวดลาย สะท้อนเอกลักษณ์ของชุมชนและฝีมือช่างทอ</p><button class="btn detail-btn" data-title="ผ้าไหมไทย" data-detail="การผลิตผ้าไหมเกี่ยวข้องกับการเลี้ยงไหม สาวเส้นไหม ย้อมสี และทอผ้า ลวดลาย เทคนิค และสีแตกต่างกันตามท้องถิ่น การสนับสนุนช่างทอช่วยรักษาทักษะและสร้างรายได้ในชุมชน">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="จักสาน ไม้ไผ่ หวาย กระจูด ตะกร้า ภูมิปัญญา">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=900&q=80" alt="งานสานจากเส้นใยธรรมชาติและวัสดุพื้นบ้าน" data-caption="งานจักสานใช้วัสดุท้องถิ่นสร้างเครื่องใช้ที่มีประโยชน์">
+        <div class="card-body"><span class="tag">หัตถกรรมพื้นบ้าน</span><h3>การจักสาน</h3><p>การนำไม้ไผ่ หวาย กระจูด หรือวัสดุในท้องถิ่นมาจักและสานเป็นภาชนะ เครื่องใช้ และของตกแต่ง</p><button class="btn detail-btn" data-title="การจักสาน" data-detail="งานจักสานต้องอาศัยความรู้เรื่องการเลือกวัสดุ การจักเส้น การขึ้นโครง และลวดลาย รูปแบบผลิตภัณฑ์สะท้อนทรัพยากรและการใช้งานในแต่ละชุมชน">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="การแพทย์แผนไทย สมุนไพร นวดไทย ประคบ ภูมิปัญญา">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="สมุนไพรและบรรยากาศการดูแลสุขภาพแบบผ่อนคลาย" data-caption="การแพทย์แผนไทยเป็นองค์ความรู้ที่ควรศึกษาอย่างมีหลักฐานและใช้โดยผู้เชี่ยวชาญ">
+        <div class="card-body"><span class="tag">สุขภาพและการดูแล</span><h3>การแพทย์แผนไทย</h3><p>องค์ความรู้ด้านสมุนไพร การนวดไทย และการดูแลสุขภาพตามศาสตร์ดั้งเดิม ควรใช้อย่างเหมาะสมและปรึกษาผู้เชี่ยวชาญ</p><button class="btn detail-btn" data-title="การแพทย์แผนไทย" data-detail="การแพทย์แผนไทยเป็นองค์ความรู้ด้านสุขภาพที่มีประวัติยาวนาน เช่น การนวด การใช้สมุนไพร และการดูแลตามตำรับ การใช้สมุนไพรอาจมีข้อห้ามหรือปฏิกิริยากับยา จึงไม่ควรใช้แทนการรักษาที่จำเป็นโดยไม่ปรึกษาบุคลากรสุขภาพ">ดูรายละเอียด</button></div>
+      </article>
+      <article class="card" data-search="เกษตร ภูมิปัญญาเกษตร การทำนา น้ำ ฤดูกาล">
+        <img class="zoomable" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="พื้นที่เกษตรกรรมสีเขียวและภูมิทัศน์ชนบท" data-caption="ภูมิปัญญาการเกษตรเชื่อมโยงกับดิน น้ำ ฤดูกาล และวิถีชุมชน">
+        <div class="card-body"><span class="tag">เกษตรกรรม</span><h3>ภูมิปัญญาด้านการเกษตร</h3><p>ความรู้เกี่ยวกับดิน น้ำ เมล็ดพันธุ์ ฤดูกาล และการจัดการพื้นที่ ซึ่งปรับตามสภาพแวดล้อมของแต่ละท้องถิ่น</p><button class="btn detail-btn" data-title="ภูมิปัญญาด้านการเกษตร" data-detail="ภูมิปัญญาการเกษตรเกิดจากการสังเกตและประสบการณ์ของเกษตรกร เช่น การเลือกพันธุ์พืช การจัดการน้ำ การใช้ปุ๋ยอินทรีย์ และการวางแผนเพาะปลูกให้เหมาะกับภูมิอากาศ">ดูรายละเอียด</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๘. แกลเลอรีรูปภาพ</h2><p>เลือกหมวดหมู่ แล้วคลิกภาพเพื่อดูภาพขนาดใหญ่</p></div></div>
+    <div class="filters" role="group" aria-label="กรองรูปภาพ">
+      <button class="filter active" data-filter="all">ทั้งหมด</button><button class="filter" data-filter="architecture">สถาปัตยกรรม</button><button class="filter" data-filter="art">ศิลปะ</button><button class="filter" data-filter="performance">การแสดง</button><button class="filter" data-filter="tradition">ประเพณี</button><button class="filter" data-filter="food">อาหาร</button><button class="filter" data-filter="wisdom">ภูมิปัญญา</button>
+    </div>
+    <div class="grid" id="galleryGrid">
+      <article class="card gallery-item" data-category="architecture"><img class="zoomable" src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=900&q=80" alt="สถาปัตยกรรมวัดไทย" data-caption="สถาปัตยกรรมไทย"><div class="card-body"><h3>สถาปัตยกรรมไทย</h3><p>รูปแบบอาคารและงานช่างไทย</p></div></article>
+      <article class="card gallery-item" data-category="art"><img class="zoomable" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80" alt="งานจิตรกรรมและสีสันทางศิลปะ" data-caption="จิตรกรรมและงานศิลป์"><div class="card-body"><h3>จิตรกรรมและงานศิลป์</h3><p>การใช้สี ลวดลาย และเรื่องเล่า</p></div></article>
+      <article class="card gallery-item" data-category="performance"><img class="zoomable" src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=80" alt="เครื่องแต่งกายและการแสดงวัฒนธรรม" data-caption="นาฏศิลป์และการแสดง"><div class="card-body"><h3>นาฏศิลป์และการแสดง</h3><p>ท่ารำและเครื่องแต่งกาย</p></div></article>
+      <article class="card gallery-item" data-category="tradition"><img class="zoomable" src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?auto=format&fit=crop&w=900&q=80" alt="แสงไฟในงานประเพณียามค่ำคืน" data-caption="ประเพณีและเทศกาล"><div class="card-body"><h3>ประเพณีและเทศกาล</h3><p>กิจกรรมที่สืบทอดในชุมชน</p></div></article>
+      <article class="card gallery-item" data-category="food"><img class="zoomable" src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=900&q=80" alt="อาหารไทยในชาม" data-caption="อาหารไทย"><div class="card-body"><h3>อาหารไทย</h3><p>วัตถุดิบและรสชาติหลากหลาย</p></div></article>
+      <article class="card gallery-item" data-category="wisdom"><img class="zoomable" src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=80" alt="ผ้าทอและงานฝีมือ" data-caption="ผ้าทอและภูมิปัญญา"><div class="card-body"><h3>ภูมิปัญญาและหัตถกรรม</h3><p>ทักษะจากช่างและชุมชน</p></div></article>
+    </div>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-head"><div><div class="ornament">❧</div><h2>๙. แบบทดสอบความรู้</h2><p>ตอบคำถาม ๑๐ ข้อ แล้วตรวจคะแนนและอ่านคำอธิบาย</p></div></div>
+    <form class="quiz-box" id="quizForm">
+      <div id="questions"></div>
+      <button type="submit" class="btn">ตรวจคำตอบ</button>
+      <button type="button" class="btn secondary" id="resetQuiz">ทำแบบทดสอบใหม่</button>
+      <div id="quiz-result" aria-live="polite"></div>
+      <div id="quiz-review"></div>
+    </form>
+  </section>
+
+  <section class="section" id="about">
+    <div class="about">
+      <div class="ornament">❧ ❀ ❧</div><h2>เกี่ยวกับเว็บไซต์</h2>
+      <p>เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นสื่อการเรียนรู้เบื้องต้นเกี่ยวกับศิลปะและวัฒนธรรมไทย ช่วยให้ผู้เรียนสำรวจงานศิลป์ สถาปัตยกรรม การแสดง ดนตรี ประเพณี อาหาร และภูมิปัญญาในรูปแบบที่เข้าใจง่าย</p>
+      <p><strong>หมายเหตุเรื่องรูปภาพ:</strong> ภาพประกอบโหลดจาก Unsplash ผ่านลิงก์ภายนอกเพื่อใช้เป็นภาพประกอบตัวอย่าง ภาพบางภาพเป็นภาพวัฒนธรรมทั่วไป ไม่ได้รับการยืนยันว่าเป็นสถานที่หรือประเพณีไทยตามคำบรรยายทุกภาพ จึงควรตรวจสอบภาพและสิทธิ์การใช้งานก่อนเผยแพร่เว็บไซต์จริง</p>
+      <p><strong>แหล่งข้อมูลแนะนำสำหรับศึกษาต่อ</strong></p>
+      <ul>
+        <li><a href="https://www.finearts.go.th/" target="_blank" rel="noopener noreferrer">กรมศิลปากร</a> — ข้อมูลด้านโบราณสถาน ศิลปกรรม และมรดกวัฒนธรรม</li>
+        <li><a href="https://www.culture.go.th/" target="_blank" rel="noopener noreferrer">กระทรวงวัฒนธรรม</a> — ข่าวสารและข้อมูลด้านวัฒนธรรมไทย</li>
+        <li><a href="https://ich.unesco.org/" target="_blank" rel="noopener noreferrer">ยูเนสโก: มรดกวัฒนธรรมที่จับต้องไม่ได้</a> — ข้อมูลมรดกวัฒนธรรมจากนานาประเทศ</li>
+      </ul>
+      <small>ควรตรวจสอบรายละเอียดทางประวัติศาสตร์จากแหล่งทางการหรือผู้เชี่ยวชาญในแต่ละหัวข้อก่อนใช้เป็นเอกสารอ้างอิงทางวิชาการ</small>
+    </div>
+  </section>
+</main>
+
+<footer><p>“ร่วมอนุรักษ์ สืบสาน และเผยแพร่ศิลปะและวัฒนธรรมไทยให้คงอยู่สืบไป”</p><p>จัดทำเพื่อการเรียนรู้ | ศิลปะและวัฒนธรรมไทย</p><small>ภาพประกอบ: Unsplash (โหลดจากเว็บไซต์ภายนอก) · แหล่งข้อมูลศึกษาเพิ่มเติมอยู่ในส่วนเกี่ยวกับเว็บไซต์</small></footer>
+
+<button id="backtop" type="button" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">↑</button>
+
+<dialog id="detailDialog" aria-labelledby="detailTitle">
+  <div class="modal-head"><h3 id="detailTitle">รายละเอียด</h3><button class="close" type="button" data-close="detailDialog" aria-label="ปิด">×</button></div>
+  <p id="detailText" class="modal-text"></p>
+</dialog>
+<dialog id="imageDialog" aria-label="ดูภาพขนาดใหญ่">
+  <div class="modal-head"><h3 id="imageTitle">ภาพขนาดใหญ่</h3><button class="close" type="button" data-close="imageDialog" aria-label="ปิด">×</button></div>
+  <img id="modalImage" class="modal-img" src="" alt="">
+  <p id="imageCaption" class="modal-text"></p>
+</dialog>
+
+<script>
+(() => {
+  const $ = (s, root=document) => root.querySelector(s);
+  const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+
+  // ปรับขนาดตัวอักษร
+  let fontSize = 16;
+  $('#fontUp').addEventListener('click', () => {
+    fontSize = Math.min(22, fontSize + 1);
+    document.documentElement.style.setProperty('--base', fontSize + 'px');
+  });
+  $('#fontDown').addEventListener('click', () => {
+    fontSize = Math.max(13, fontSize - 1);
+    document.documentElement.style.setProperty('--base', fontSize + 'px');
+  });
+
+  // โหมดกลางคืน
+  $('#themeToggle').addEventListener('click', () => {
+    const enabled = document.body.classList.toggle('night');
+    $('#themeToggle').textContent = enabled ? '☀ โหมดกลางวัน' : '☾ โหมดกลางคืน';
+    $('#themeToggle').setAttribute('aria-pressed', String(enabled));
+  });
+
+  // แชร์หรือคัดลอกลิงก์
+  $('#shareBtn').addEventListener('click', async () => {
+    const shareData = {title: document.title, text: 'เรียนรู้ศิลปะและวัฒนธรรมไทย', url: location.href};
+    try {
+      if (navigator.share) await navigator.share(shareData);
+      else if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(location.href);
+        alert('คัดลอกลิงก์เว็บไซต์แล้ว');
+      } else {
+        window.prompt('คัดลอกลิงก์เว็บไซต์นี้', location.href);
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') window.prompt('คัดลอกลิงก์เว็บไซต์นี้', location.href);
+    }
+  });
+  $('#printBtn').addEventListener('click', () => window.print());
+
+  // ปุ่มกลับด้านบน
+  const backtop = $('#backtop');
+  window.addEventListener('scroll', () => backtop.classList.toggle('show', window.scrollY > 500));
+  backtop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // หน้าต่างรายละเอียด
+  $$('.detail-btn').forEach(btn => btn.addEventListener('click', () => {
+    $('#detailTitle').textContent = btn.dataset.title || 'รายละเอียด';
+    $('#detailText').textContent = btn.dataset.detail || '';
+    $('#detailDialog').showModal();
+  }));
+  $$('[data-close]').forEach(btn => btn.addEventListener('click', () => {
+    const dialog = document.getElementById(btn.dataset.close);
+    if (dialog) dialog.close();
+  }));
+  $$('dialog').forEach(dialog => dialog.addEventListener('click', e => {
+    if (e.target === dialog) dialog.close();
+  }));
+
+  // เปิดดูภาพขนาดใหญ่
+  $$('.zoomable').forEach(img => {
+    img.addEventListener('click', () => {
+      $('#modalImage').src = img.currentSrc || img.src;
+      $('#modalImage').alt = img.alt || '';
+      $('#imageTitle').textContent = img.alt || 'ภาพขนาดใหญ่';
+      $('#imageCaption').textContent = img.dataset.caption || img.alt || '';
+      $('#imageDialog').showModal();
+    });
+    img.addEventListener('error', () => {
+      img.alt = (img.alt || 'ภาพประกอบ') + ' (โหลดภาพไม่สำเร็จ กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ต)';
+      img.style.objectFit = 'contain';
+      img.style.padding = '1rem';
+      img.style.background = '#eadcc4';
+    }, {once:true});
+  });
+
+  // ค้นหาเนื้อหาในบัตรความรู้
+  const searchable = $$('.searchable');
+  function runSearch(query) {
+    const q = query.trim().toLocaleLowerCase('th');
+    let count = 0;
+    searchable.forEach(section => {
+      const cards = $$('.card[data-search], .feature[data-search]', section);
+      let sectionMatches = 0;
+      cards.forEach(card => {
+        const text = (card.dataset.search + ' ' + card.innerText).toLocaleLowerCase('th');
+        const match = !q || text.includes(q);
+        card.classList.toggle('hidden', !match);
+        if (match) { count++; sectionMatches++; }
+      });
+      if (cards.length) section.classList.toggle('hidden', sectionMatches === 0);
+    });
+    $('#searchStatus').textContent = q ? `พบเนื้อหาที่ตรงกับ “${query.trim()}” จำนวน ${count} รายการ` : '';
+  }
+  $('#searchForm').addEventListener('submit', e => {
+    e.preventDefault();
+    runSearch($('#searchInput').value);
+    $('#searchStatus').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+  $('#clearSearch').addEventListener('click', () => {
+    $('#searchInput').value = '';
+    runSearch('');
+  });
+
+  // กรองแกลเลอรี
+  $$('.filter').forEach(btn => btn.addEventListener('click', () => {
+    $$('.filter').forEach(b => b.classList.toggle('active', b === btn));
+    const filter = btn.dataset.filter;
+    $$('.gallery-item').forEach(item => {
+      item.classList.toggle('hidden', filter !== 'all' && item.dataset.category !== filter);
+    });
+  }));
+
+  // แบบทดสอบ 10 ข้อ พร้อมเฉลย
+  const quiz = [
+    {q:'จิตรกรรมฝาผนังในวัดมักถ่ายทอดเรื่องใด',a:['พุทธประวัติและเรื่องราวทางวัฒนธรรม','วิธีซ่อมรถยนต์','แผนที่ดาวเทียม','สูตรคำนวณภาษี'],correct:0,why:'จิตรกรรมในศาสนสถานมักถ่ายทอดพุทธประวัติ วรรณคดี และวิถีชีวิต'},
+    {q:'เครื่องดนตรีใดจัดเป็นเครื่องตี',a:['ซอด้วง','ขลุ่ยไทย','ระนาดเอก','จะเข้'],correct:2,why:'ระนาดเอกใช้ไม้ตีลูกระนาดให้เกิดเสียง'},
+    {q:'โขนมักนำเรื่องใดมาแสดง',a:['รามเกียรติ์','ไซอิ๋วเท่านั้น','นิทานอวกาศ','เรื่องกีฬา'],correct:0,why:'รามเกียรติ์เป็นเรื่องสำคัญที่นิยมใช้ในการแสดงโขน'},
+    {q:'ผ้าไหมไทยเกี่ยวข้องกับภูมิปัญญาด้านใด',a:['การทอผ้า','การต่อเรือเหล็ก','การทำแก้วเลนส์','การพิมพ์หนังสือพิมพ์'],correct:0,why:'ผ้าไหมเกิดจากความรู้เรื่องเส้นไหม การย้อม และการทอ'},
+    {q:'ประเพณียี่เป็งสัมพันธ์กับวัฒนธรรมใด',a:['ล้านนา','สแกนดิเนเวีย','อเมริกาใต้','เมดิเตอร์เรเนียน'],correct:0,why:'ยี่เป็งเป็นประเพณีในวัฒนธรรมล้านนาทางภาคเหนือ'},
+    {q:'ข้อใดเป็นเครื่องดนตรีประเภทเครื่องสี',a:['ซอด้วง','ระนาดเอก','ขิม','ฉิ่ง'],correct:0,why:'ซอด้วงใช้คันชักสีสายให้เกิดเสียง'},
+    {q:'ข้าวซอยเป็นอาหารที่มีชื่อเสียงในภูมิภาคใดของไทย',a:['ภาคเหนือ','ภาคใต้เท่านั้น','ภาคกลางเท่านั้น','ภาคตะวันออกเท่านั้น'],correct:0,why:'ข้าวซอยเป็นอาหารที่มีชื่อเสียงในภาคเหนือ โดยเฉพาะเชียงใหม่'},
+    {q:'งานจักสานมักใช้วัสดุชนิดใด',a:['ไม้ไผ่หรือหวาย','กระจกนิรภัยเท่านั้น','คอนกรีต','แผ่นวงจร'],correct:0,why:'งานจักสานมักใช้วัสดุเส้นใยหรือวัสดุธรรมชาติ เช่น ไม้ไผ่ หวาย และกระจูด'},
+    {q:'วัดอรุณราชวรารามตั้งอยู่ริมแม่น้ำใด',a:['แม่น้ำเจ้าพระยา','แม่น้ำโขง','แม่น้ำปิง','แม่น้ำตาปี'],correct:0,why:'วัดอรุณราชวรารามตั้งอยู่ริมแม่น้ำเจ้าพระยา ฝั่งธนบุรี'},
+    {q:'การอนุรักษ์วัฒนธรรมที่เหมาะสมคือข้อใด',a:['เรียนรู้และสืบทอดโดยเคารพชุมชน','เปลี่ยนแปลงข้อมูลโดยไม่ตรวจสอบ','ทำลายโบราณสถาน','เผยแพร่ภาพโดยไม่สนใจสิทธิ์'],correct:0,why:'การอนุรักษ์ควรเรียนรู้อย่างถูกต้อง เคารพชุมชน และดูแลมรดกทางวัฒนธรรม'}
+  ];
+  function renderQuiz() {
+    $('#questions').innerHTML = quiz.map((item,i) => `
+      <fieldset class="question"><legend>ข้อ ${i+1}. ${item.q}</legend>
+      ${item.a.map((option,j)=>`<label><input type="radio" name="q${i}" value="${j}" required> ${option}</label>`).join('')}
+      </fieldset>`).join('');
+    $('#quiz-result').textContent = '';
+    $('#quiz-review').innerHTML = '';
+  }
+  renderQuiz();
+  $('#quizForm').addEventListener('submit', e => {
+    e.preventDefault();
+    let score = 0;
+    const review = quiz.map((item,i) => {
+      const chosen = $(`input[name="q${i}"]:checked`);
+      const correct = chosen && Number(chosen.value) === item.correct;
+      if (correct) score++;
+      return `<div class="question"><strong>ข้อ ${i+1}: ${correct ? 'ตอบถูก' : 'คำตอบที่ถูกคือ ' + item.a[item.correct]}</strong><p>${item.why}</p></div>`;
+    }).join('');
+    $('#quiz-result').textContent = `คุณได้ ${score} จาก ${quiz.length} คะแนน (${Math.round(score/quiz.length*100)}%)`;
+    $('#quiz-review').innerHTML = `<h3>เฉลยและคำอธิบาย</h3>${review}`;
+    $('#quiz-result').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  $('#resetQuiz').addEventListener('click', renderQuiz);
+})();
+</script>
+</body>
+</html>
